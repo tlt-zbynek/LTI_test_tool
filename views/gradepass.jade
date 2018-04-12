@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  h2 Headers
+  div
+    pre #{headers}
+
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+  script.
+    var passgrade = function () {
+        $.ajax({
+          type: 'POST',
+          url: 'grade'
+        });
+      };
+  div
+    button(onclick='passgrade()') Click

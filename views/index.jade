@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  h2 Headers
+  div
+    pre #{headers}
+  h2 Body
+  div
+    pre #{body}
+  h2 Timestamp
+  div
+    pre #{timestamp}
+  h2 OAuth
+  div
+    pre #{oauth}
+  h2 queryParams
+  div
+    pre #{queryParams}
+  h2 urlParams
+  div
+    pre #{urlParams}
+  h2 reqUrl
+  div
+    pre #{reqUrl}
+  h2 apiResBody
+  div
+    pre #{apiResBody}
